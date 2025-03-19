@@ -3,6 +3,11 @@ output "cluster_name" {
   value       = aws_eks_cluster.main.name
 }
 
+output "cluster_version" {
+  description = "Version of the EKS cluster"
+  value       = aws_eks_cluster.main.version
+}
+
 output "cluster_endpoint" {
   description = "Endpoint of the EKS cluster"
   value       = aws_eks_cluster.main.endpoint
